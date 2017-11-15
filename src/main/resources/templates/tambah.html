@@ -13,13 +13,13 @@ and open the template in the editor.
     <form method="post" th:object="${prps}" th:action="@{/tambah}">
         <table border="0">
             <tr><td>Id Buku</td>
-                <td><input type="text" class="form-control" th:field="*{id_buku}" /></td></tr>
+                <td><input type="text" th:field="*{id_buku}" /></td></tr>
         
             <tr><td>Judul Buku</td>
-                <td><input type="text" class="form-control" th:field="*{judul_buku}" /></td></tr>
+                <td><input type="text" th:field="*{judul_buku}" /></td></tr>
       
             <tr><td>Pengarang</td>
-                <td><input type="text" class="form-control" th:field="*{pengarang}" /></td></tr>
+                <td><input type="text" th:field="*{pengarang}" /></td></tr>
        
         </table>
           <button type="submit">Simpan</button>
