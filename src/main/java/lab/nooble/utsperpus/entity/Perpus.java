@@ -22,5 +22,5 @@ public class Perpus {
     @Getter @Setter
     private String judul_buku;
     @Getter @Setter
-    private String pengarang;
+    private String penulis;
 }

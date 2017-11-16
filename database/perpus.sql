@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2017 at 01:23 PM
+-- Generation Time: Nov 16, 2017 at 05:13 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -33,15 +33,16 @@ USE `perpus`;
 CREATE TABLE `perpus` (
   `id_buku` int(11) NOT NULL,
   `judul_buku` varchar(50) NOT NULL,
-  `pengarang` varchar(30) NOT NULL
+  `penulis` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `perpus`
 --
 
-INSERT INTO `perpus` (`id_buku`, `judul_buku`, `pengarang`) VALUES
-(1231, 'awdad', 'adawd');
+INSERT INTO `perpus` (`id_buku`, `judul_buku`, `penulis`) VALUES
+(121212, 'teslagi', 'tesjuga'),
+(131451, 'testing', 'tes');
 
 --
 -- Indexes for dumped tables

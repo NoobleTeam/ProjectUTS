@@ -38,15 +38,15 @@ public class AppController {
     public String addDataProcessing(@ModelAttribute("prps") Perpus prps, BindingResult bind){
         System.out.println(prps.getId_buku());
         System.out.println(prps.getJudul_buku());
-        System.out.println(prps.getPengarang());
+        System.out.println(prps.getPenulis());
         // proses simpan data
         perpusRepo.save(prps);
-        return "redirect:listbuku";
+        return "redirect:/";
     }
     @RequestMapping("/hapus")
     public String hapusData(@RequestParam("id_buku") String id_buku){
         perpusRepo.delete(id_buku);
-        return "redirect:listbuku";
+        return "redirect:/";
     }
     
     @RequestMapping(value = "/edit", method = RequestMethod.GET)
@@ -59,8 +59,8 @@ public class AppController {
     public String saveeditdata(@ModelAttribute("prps") Perpus prps, BindingResult result){
         System.out.println("id_buku : " + prps.getId_buku());
         System.out.println("judul_buku : " + prps.getJudul_buku());
-        System.out.println("pengarang : " + prps.getPengarang());
+        System.out.println("penulis : " + prps.getPenulis());
         perpusRepo.save(prps);
-        return "redirect:listbuku";
+        return "redirect:/";
     }
 }

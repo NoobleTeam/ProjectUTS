@@ -78,7 +78,7 @@ and open the template in the editor.
                 <tr th:each="prps : ${listbuku}">
                     <td ALIGN="center" th:text="${prps.id_buku}"></td>
                     <td ALIGN="center" th:text="${prps.judul_buku}"></td>
-                    <td ALIGN="center" th:text="${prps.pengarang}"></td>
+                    <td ALIGN="center" th:text="${prps.penulis}"></td>
                     <td><center><a th:href="@{/edit(id_buku=${prps.id_buku})}">Ubah</a>
                     <br></br>
                     <a th:href="@{/hapus(id_buku=${prps.id_buku})}">Hapus</a></center></td>
