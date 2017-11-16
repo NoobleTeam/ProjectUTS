@@ -6,10 +6,66 @@ and open the template in the editor.
 -->
 <html lang="en">
     <head>
-        <title>Tambah Buku</title>
+        <title>Tambah Data Buku</title>
     </head>
+    <style>
+    div.container {
+        width: 100%;
+        border: 1px solid gray;
+    }
+
+    header, footer {
+        padding: 1em;
+        color: white;
+        background-color: #0045b5;
+        clear: left;
+        text-align: left;
+    }
+
+    nav {
+        float: left;
+        max-width: 160px;
+        margin: 0;
+        padding: 1em;
+            color: black;
+    }
+
+    nav ul {
+            color: black;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul a {
+            color: black;
+        text-decoration: none;
+    }
+
+    article {
+            background-color: #A7BCCD;
+        margin-left: 110px;
+        border-left: 1px solid gray;
+        padding: 1em;
+        overflow: hidden;
+            height: 420px;
+    }
+    </style>
     <body>
-    <h1>Tambah Data</h1>
+        <div class="container">
+        <header>
+        <h2>Aplikasi Perekaman Buku Perpustakaan</h2>
+        </header>
+        <nav>
+        <center>Menu</center>
+        <br></br>
+        <br></br>
+        <a href="/">Kembali</a>
+        </nav>
+        <article style="overflow-y: auto; height:420px;">
+        <center>
+        <center>
+        <h2>Tambah Data Buku</h2>
+        </center>
     <form method="post" th:object="${prps}" th:action="@{/tambah}">
         <table border="0">
             <tr><td>Id Buku</td>
@@ -25,6 +81,11 @@ and open the template in the editor.
           <button type="submit">Simpan</button>
        
     </form>
-         
+    </center>
+         </article>
+            <footer>
+                <center>Project UTS Object Oriented Programming 2<br></br>&copy; Copyright 2017</center>
+            </footer>
+        </div>
     </body>
 </html>
