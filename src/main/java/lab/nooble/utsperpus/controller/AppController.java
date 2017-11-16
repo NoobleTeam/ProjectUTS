@@ -25,9 +25,10 @@ public class AppController {
     @Autowired
     private PerpusRepo perpusRepo;
     
-    @RequestMapping("/listbuku")
-    public void listbuku(Model model){
+    @RequestMapping("/")
+    public String listbuku(Model model){
     model.addAttribute("listbuku", perpusRepo.findAll());
+    return "listbuku";
     }
     
     @RequestMapping(value ="/tambah", method = RequestMethod.GET)
